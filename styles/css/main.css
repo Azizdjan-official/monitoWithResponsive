@@ -1,3 +1,59 @@
+body .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  animation: load 3s linear 1;
+}
+body .loader .loader-inside {
+  width: 80px;
+  position: relative;
+}
+body .loader .loader-inside span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(38, 0, 255);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .loader .loader-inside span .load1 {
+  left: 0px;
+  animation: anime 1s linear -0.3s infinite;
+}
+body .loader .loader-inside span .load2 {
+  left: 34px;
+  animation: anime 1s linear -0.2s infinite;
+}
+body .loader .loader-inside span .load3 {
+  left: 68px;
+  animation: anime 1s linear -0.1s infinite;
+}
+
+@keyframes anime {
+  100% {
+    top: 30px;
+  }
+}
+@keyframes load {
+  0%, 99% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @font-face {
   font-family: svn;
   src: url(/fonts/svn-gilroy-cufonfonts/SVNGilroy\ Bold.otf);
@@ -972,6 +1028,61 @@ body footer .foot0 .foot3 a {
   box-sizing: border-box;
 }
 
+body .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  animation: load 3s linear 1;
+}
+body .loader .loader-box {
+  width: 80px;
+  position: relative;
+}
+body .loader .loader-box span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(38, 0, 255);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .loader .loader-box span .spin1 {
+  left: 0px;
+  animation: anime 1s linear -0.3s infinite;
+}
+body .loader .loader-box span .spin2 {
+  left: 34px;
+  animation: anime 1s linear -0.2s infinite;
+}
+body .loader .loader-box span .spin3 {
+  left: 68px;
+  animation: anime 1s linear -0.1s infinite;
+}
+@keyframes anime {
+  100% {
+    top: 30px;
+  }
+}
+@keyframes load {
+  0%, 99% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 body header {
   background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
   height: auto;
