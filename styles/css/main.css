@@ -1000,15 +1000,15 @@ body .loader .loader-inside span {
   top: 0;
   left: 0;
 }
-body .loader .loader-inside .load1 {
+body .loader .loader-inside .spin1 {
   left: 0px;
   animation: anime 1s linear -0.3s infinite;
 }
-body .loader .loader-inside .load2 {
+body .loader .loader-inside .spin2 {
   left: 34px;
   animation: anime 1s linear -0.2s infinite;
 }
-body .loader .loader-inside .load3 {
+body .loader .loader-inside .spin3 {
   left: 68px;
   animation: anime 1s linear -0.1s infinite;
 }
