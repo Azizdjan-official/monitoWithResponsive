@@ -1122,6 +1122,7 @@ body header .container .header {
   display: flex;
   flex-direction: row;
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 body header .container .header .header-left {
   display: flex;
